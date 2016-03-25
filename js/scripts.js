@@ -1,15 +1,74 @@
+var userAgeInput ;
+var userFavoritePetInput ;
+var userFavoriteCountryInput ;
+var userFavoriteIceCreamFlavorInput ;
+var userFavoriteSportInput ;
+var numberOfSelected_A_Counter = 0;
+var numberOfSelected_B_Counter = 0;
+var numberOfSelected_C_Counter = 0;
+
 $(document).ready(function(){
   $("form").submit(function(event){
-    event.preventDefault;
-    var userAgeInput = ($("#userAge").val());
-    alert (userAgeInput);
-    var userFavoritePetInput = ($("#userFavoritePet").val());
-    alert (userFavoritePetInput);
-    var userFavoriteCountryInput = ($("#userFavoriteCountry").val());
-    alert (userFavoriteCountryInput);
-    var userFavoriteIceCreamFlavorInput = ($("#userFavoriteIceCreamFlavor").val());
-    alert (userFavoriteIceCreamFlavorInput);
-    var userFavoriteSportInput = ($("#userFavoriteSport").val());
-    alert (userFavoriteSportInput);
+    event.preventDefault();
+
+    userAgeInput = ($("#userAge").val());
+    userFavoritePetInput = ($("#userFavoritePet").val());
+    userFavoriteCountryInput = ($("#userFavoriteCountry").val());
+    userFavoriteIceCreamFlavorInput = ($("#userFavoriteIceCreamFlavor").val());
+    userFavoriteSportInput = ($("#userFavoriteSport").val());
+
+    alert (userAgeInput + " " + userFavoritePetInput + " " + userFavoriteCountryInput + " " + userFavoriteIceCreamFlavorInput + " " + userFavoriteSportInput);
+
+    // $("#answerStarWars").show() ; con questo comando visualizzo la selezione dell-utente
+
+    if (userAgeInput === "a"){
+      numberOfSelected_A_Counter += 1;
+    } else if (userAgeInput === "b") {
+      numberOfSelected_B_Counter += 1;
+    } else if (userAgeInput === "c") {
+      numberOfSelected_C_Counter += 1;
+    }
+
+    if (userFavoritePetInput === "a"){
+      numberOfSelected_A_Counter += 1;
+    } else if (userFavoritePetInput === "b") {
+      numberOfSelected_B_Counter += 1;
+    } else if (userFavoritePetInput === "c") {
+      numberOfSelected_C_Counter += 1;
+    }
+
+    if (userFavoriteCountryInput === "a"){
+      numberOfSelected_A_Counter += 1;
+    } else if (userFavoriteCountryInput === "b") {
+      numberOfSelected_B_Counter += 1;
+    } else if (userFavoriteCountryInput === "c") {
+      numberOfSelected_C_Counter += 1;
+    }
+
+    if (userFavoriteIceCreamFlavorInput === "a"){
+      numberOfSelected_A_Counter += 1;
+    } else if (userFavoriteIceCreamFlavorInput === "b") {
+      numberOfSelected_B_Counter += 1;
+    } else if (userFavoriteIceCreamFlavorInput === "c") {
+      numberOfSelected_C_Counter += 1;
+    }
+
+    if (userFavoriteSportInput === "a"){
+      numberOfSelected_A_Counter += 1;
+    } else if (userFavoriteSportInput === "b") {
+      numberOfSelected_B_Counter += 1;
+    } else if (userFavoriteSportInput === "c") {
+      numberOfSelected_C_Counter += 1;
+    }
+
+    alert ("A" + numberOfSelected_A_Counter + "B" + numberOfSelected_B_Counter + "C" + numberOfSelected_C_Counter) ;
+
+    if (numberOfSelected_A_Counter > numberOfSelected_B_Counter && numberOfSelected_A_Counter > numberOfSelected_C_Counter) {
+      alert ("You should visit Games Of thrones");
+    } else if (numberOfSelected_B_Counter > numberOfSelected_A_Counter && numberOfSelected_B_Counter > numberOfSelected_C_Counter) {
+      alert ("You should visit Star wars");
+    } else if (numberOfSelected_C_Counter > numberOfSelected_A_Counter && numberOfSelected_C_Counter > numberOfSelected_B_Counter) {
+      alert ("You should visit Lord of the rings");
+    }
   })
 })
