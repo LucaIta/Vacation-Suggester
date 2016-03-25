@@ -21,10 +21,6 @@ $(document).ready(function(){
     userFavoriteIceCreamFlavorInput = ($("#userFavoriteIceCreamFlavor").val());
     userFavoriteSportInput = ($("#userFavoriteSport").val());
 
-    // alert (userAgeInput + " " + userFavoritePetInput + " " + userFavoriteCountryInput + " " + userFavoriteIceCreamFlavorInput + " " + userFavoriteSportInput);
-
-    // $("#answerStarWars").show() ; con questo comando visualizzo la selezione dell-utente
-
     if (userAgeInput === "a"){
       numberOfSelected_A_Counter += 1;
     } else if (userAgeInput === "b") {
@@ -65,15 +61,11 @@ $(document).ready(function(){
       numberOfSelected_C_Counter += 1;
     }
 
-    // alert ("A" + numberOfSelected_A_Counter + "B" + numberOfSelected_B_Counter + "C" + numberOfSelected_C_Counter) ;
     if (numberOfSelected_A_Counter > numberOfSelected_B_Counter && numberOfSelected_A_Counter > numberOfSelected_C_Counter) {
-      // alert ("You should visit Games Of thrones");
       $("#answerGamesOfThrones, #openingAnswerMessage").show();
     } else if (numberOfSelected_B_Counter > numberOfSelected_A_Counter && numberOfSelected_B_Counter > numberOfSelected_C_Counter) {
-      // alert ("You should visit Star wars");
       $("#answerStarWars, #openingAnswerMessage").show();
     } else if (numberOfSelected_C_Counter > numberOfSelected_A_Counter && numberOfSelected_C_Counter > numberOfSelected_B_Counter) {
-      // alert ("You should visit Lord of the rings");
       $("#answerTheLordOfTheRings, #openingAnswerMessage").show();
     } else if (numberOfSelected_A_Counter === numberOfSelected_B_Counter || numberOfSelected_A_Counter === numberOfSelected_C_Counter || numberOfSelected_B_Counter === numberOfSelected_C_Counter) {
       $("#extraFormForEquivalentAnswers").show();
