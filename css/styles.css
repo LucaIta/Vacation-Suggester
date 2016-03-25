@@ -5,3 +5,7 @@
 .question {
   font-weight: bold;
 }
+
+#mainForm p {
+  padding-top: 10px
+}

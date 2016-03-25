@@ -8,9 +8,9 @@
     <script src="js/scripts.js"></script>
   </head>
   <body>
-    <form id="mainForm">
-      <div class="container">
-        <h1 class="text-primary">Vacation Suggester</h1>
+    <div class="container">
+      <h1 class="text-primary">Vacation Suggester</h1>
+       <form id="mainForm">
         <div class="form-group">
           <label for="userName">Name</label>
           <input type="text" class="form-control" id="userName" placeholder="Insert your name here">
@@ -45,9 +45,11 @@
           <option value="b">B - Football</option>
           <option value="c">C - Basketball</option>
         </select>
+        <br>
         <button type="submit" class="btn btn-default">Submit</button>
       </form>
       <form id="extraFormForEquivalentAnswers">
+        <br>
         <p>Hi <span class="userNameOutput"></span>,</p>
         <p>You've selected an equivalent amount of A's B's or C's.</p>
         <p>You want to make things hard for me, don't you? :(</p>
@@ -57,19 +59,24 @@
           <option value="orange">Orange</option>
           <option value="pear">Pear</option>
         </select>
+        <br>
         <button type="submit" class="btn btn-default">Submit</button>
       </form>
       <div id="placeThatTheUserShouldVisit">
         <div id="openingAnswerMessage">
+          <br>
           <p>Hi <span class="userNameOutput"></span>,</p>
         </div>
         <div id="answerGamesOfThrones">
+          <p>You have selected mainly A's</p>
           <p>You should visit the world of Games Of Thrones</p>
         </div>
         <div id="answerStarWars">
+          <p>You have selected mainly B's</p>
           <p>You should visit the universe of Star Wars</p>
         </div>
         <div id="answerTheLordOfTheRings">
+          <p>You have selected mainly C's</p>
           <p>You should visit the world the Lord Of The Rings</p>
         </div>
       </div>
