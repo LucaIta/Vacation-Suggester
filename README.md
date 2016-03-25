@@ -7,6 +7,8 @@
 ## Description
 
 _This page was developed as a solo project at Epicodus "Intro to programming" class. According to the selected preferences, the page will suggest you a place to visit_
+_GitHub Pages link:_
+http://lucaita.github.io/Vacation-Suggester-solo-project-/
 
 ## Setup/Installation Requirements
 
