@@ -3,13 +3,14 @@ var userFavoritePetInput ;
 var userFavoriteCountryInput ;
 var userFavoriteIceCreamFlavorInput ;
 var userFavoriteSportInput ;
+var userExtraQuestionInput ="" ;
 var numberOfSelected_A_Counter = 0;
 var numberOfSelected_B_Counter = 0;
 var numberOfSelected_C_Counter = 0;
 var userNameInput = "";
 
 $(document).ready(function(){
-  $("form").submit(function(event){
+  $("#mainForm").submit(function(event){
     event.preventDefault();
 
     userNameInput = $("#userName").val();
@@ -20,7 +21,7 @@ $(document).ready(function(){
     userFavoriteIceCreamFlavorInput = ($("#userFavoriteIceCreamFlavor").val());
     userFavoriteSportInput = ($("#userFavoriteSport").val());
 
-    alert (userAgeInput + " " + userFavoritePetInput + " " + userFavoriteCountryInput + " " + userFavoriteIceCreamFlavorInput + " " + userFavoriteSportInput);
+    // alert (userAgeInput + " " + userFavoritePetInput + " " + userFavoriteCountryInput + " " + userFavoriteIceCreamFlavorInput + " " + userFavoriteSportInput);
 
     // $("#answerStarWars").show() ; con questo comando visualizzo la selezione dell-utente
 
@@ -64,15 +65,29 @@ $(document).ready(function(){
       numberOfSelected_C_Counter += 1;
     }
 
-    alert ("A" + numberOfSelected_A_Counter + "B" + numberOfSelected_B_Counter + "C" + numberOfSelected_C_Counter) ;
+    // alert ("A" + numberOfSelected_A_Counter + "B" + numberOfSelected_B_Counter + "C" + numberOfSelected_C_Counter) ;
     if (numberOfSelected_A_Counter > numberOfSelected_B_Counter && numberOfSelected_A_Counter > numberOfSelected_C_Counter) {
-      alert ("You should visit Games Of thrones");
+      // alert ("You should visit Games Of thrones");
       $("#answerGamesOfThrones, #openingAnswerMessage").show();
     } else if (numberOfSelected_B_Counter > numberOfSelected_A_Counter && numberOfSelected_B_Counter > numberOfSelected_C_Counter) {
-      alert ("You should visit Star wars");
+      // alert ("You should visit Star wars");
       $("#answerStarWars, #openingAnswerMessage").show();
     } else if (numberOfSelected_C_Counter > numberOfSelected_A_Counter && numberOfSelected_C_Counter > numberOfSelected_B_Counter) {
-      alert ("You should visit Lord of the rings");
+      // alert ("You should visit Lord of the rings");
+      $("#answerTheLordOfTheRings, #openingAnswerMessage").show();
+    } else if (numberOfSelected_A_Counter === numberOfSelected_B_Counter || numberOfSelected_A_Counter === numberOfSelected_C_Counter || numberOfSelected_B_Counter === numberOfSelected_C_Counter) {
+      $("#extraFormForEquivalentAnswers").show();
+    }
+  })
+  $("#extraFormForEquivalentAnswers").submit(function(event){
+    event.preventDefault();
+    userExtraQuestionInput = $("#extraQuestion").val();
+    alert(userExtraQuestionInput);
+    if (userExtraQuestionInput === "apple"){
+      $("#answerGamesOfThrones, #openingAnswerMessage").show();
+    } else if (userExtraQuestionInput === "orange") {
+      $("#answerStarWars, #openingAnswerMessage").show();
+    } else if (userExtraQuestionInput === "pear") {
       $("#answerTheLordOfTheRings, #openingAnswerMessage").show();
     }
   })

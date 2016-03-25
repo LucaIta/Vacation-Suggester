@@ -8,7 +8,7 @@
     <script src="js/scripts.js"></script>
   </head>
   <body>
-    <form>
+    <form id="mainForm">
       <div class="container">
         <h1>Vacation Suggester</h1>
         <div class="form-group">
@@ -44,6 +44,16 @@
           <option value="a">A - Soccer</option>
           <option value="b">B - Football</option>
           <option value="c">C - Basketball</option>
+        </select>
+        <button type="submit" class="btn btn-default">Submit</button>
+      </form>
+      <form id="extraFormForEquivalentAnswers">
+        <p>You want to make things hard for me, don't you? :(</p>
+        <p>Ok, choose what is your favorite fruit</p>
+        <select class="form-control" id="extraQuestion">
+          <option value="apple">Apple</option>
+          <option value="orange">Orange</option>
+          <option value="pear">Pear</option>
         </select>
         <button type="submit" class="btn btn-default">Submit</button>
       </form>
