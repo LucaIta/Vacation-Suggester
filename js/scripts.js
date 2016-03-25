@@ -6,11 +6,14 @@ var userFavoriteSportInput ;
 var numberOfSelected_A_Counter = 0;
 var numberOfSelected_B_Counter = 0;
 var numberOfSelected_C_Counter = 0;
+var userNameInput = "";
 
 $(document).ready(function(){
   $("form").submit(function(event){
     event.preventDefault();
 
+    userNameInput = $("#userName").val();
+    $("#userNameOutput").text(userNameInput);
     userAgeInput = ($("#userAge").val());
     userFavoritePetInput = ($("#userFavoritePet").val());
     userFavoriteCountryInput = ($("#userFavoriteCountry").val());
