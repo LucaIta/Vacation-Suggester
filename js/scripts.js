@@ -62,13 +62,15 @@ $(document).ready(function(){
     }
 
     alert ("A" + numberOfSelected_A_Counter + "B" + numberOfSelected_B_Counter + "C" + numberOfSelected_C_Counter) ;
-
     if (numberOfSelected_A_Counter > numberOfSelected_B_Counter && numberOfSelected_A_Counter > numberOfSelected_C_Counter) {
       alert ("You should visit Games Of thrones");
+      $("#answerGamesOfThrones, #openingAnswerMessage").show();
     } else if (numberOfSelected_B_Counter > numberOfSelected_A_Counter && numberOfSelected_B_Counter > numberOfSelected_C_Counter) {
       alert ("You should visit Star wars");
+      $("#answerStarWars, #openingAnswerMessage").show();
     } else if (numberOfSelected_C_Counter > numberOfSelected_A_Counter && numberOfSelected_C_Counter > numberOfSelected_B_Counter) {
       alert ("You should visit Lord of the rings");
+      $("#answerTheLordOfTheRings, #openingAnswerMessage").show();
     }
   })
 })
