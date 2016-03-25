@@ -1,12 +1,12 @@
-# _{Vacation Suggester}_
+# _Vacation Suggester_
 
-#### _{According to the selected preferences, it will suggest you a place to visit}, {03/25/2016}_
+#### _According to the selected preferences, it will suggest you a place to visit, 03/25/2016_
 
-#### By _**{Luca Quatela}**_
+#### By _**Luca Quatela**_
 
 ## Description
 
-_{This page was developed as a solo project at Epicodus "Intro to programming" class. According to the selected preferences, the page will suggest you a place to visit}_
+_This page was developed as a solo project at Epicodus "Intro to programming" class. According to the selected preferences, the page will suggest you a place to visit_
 
 ## Setup/Installation Requirements
 
@@ -16,18 +16,18 @@ _{This page was developed as a solo project at Epicodus "Intro to programming" c
 
 ## Known Bugs
 
-_{No known bugs}_
+_No known bugs_
 
 ## Support and contact details
 
-_{Contact me at XXX@gmail.com if you need support}_
+_Contact me at XXX@gmail.com if you need support_
 
 ## Technologies Used
 
-_{jQuey, JavaScript, Bootstrap, HTML, CSS}_
+_jQuey, JavaScript, Bootstrap, HTML, CSS_
 
 ### License
 
-*{MIT}*
+*MIT*
 
-Copyright (c) 2015 **_{Luca Quatela}_**
+Copyright (c) 2015 **_Luca Quatela_**
