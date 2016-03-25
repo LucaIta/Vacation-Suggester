@@ -14,7 +14,7 @@ $(document).ready(function(){
     event.preventDefault();
 
     userNameInput = $("#userName").val();
-    $("#userNameOutput").text(userNameInput);
+    $(".userNameOutput").text(userNameInput);
     userAgeInput = ($("#userAge").val());
     userFavoritePetInput = ($("#userFavoritePet").val());
     userFavoriteCountryInput = ($("#userFavoriteCountry").val());
@@ -82,13 +82,12 @@ $(document).ready(function(){
   $("#extraFormForEquivalentAnswers").submit(function(event){
     event.preventDefault();
     userExtraQuestionInput = $("#extraQuestion").val();
-    alert(userExtraQuestionInput);
     if (userExtraQuestionInput === "apple"){
-      $("#answerGamesOfThrones, #openingAnswerMessage").show();
+      $("#answerGamesOfThrones").show();
     } else if (userExtraQuestionInput === "orange") {
-      $("#answerStarWars, #openingAnswerMessage").show();
+      $("#answerStarWars").show();
     } else if (userExtraQuestionInput === "pear") {
-      $("#answerTheLordOfTheRings, #openingAnswerMessage").show();
+      $("#answerTheLordOfTheRings").show();
     }
   })
 })
