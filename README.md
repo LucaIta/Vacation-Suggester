@@ -7,6 +7,7 @@
 ## Description
 
 _The user is given a series of questions to answer, based on that the site suggests the user a place to visit, 03/25/2016_
+
 _This page was developed as a solo project at Epicodus "Intro to programming" class.
 
 _GitHub Pages link:_
