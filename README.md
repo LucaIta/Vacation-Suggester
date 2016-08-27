@@ -1,12 +1,12 @@
 # _Vacation Suggester_
 
-#### _According to the selected preferences, it will suggest you a place to visit, 03/25/2016_
+#### _The user selects the age and a series of preferences, based on that the site suggests the user a place to visit, 03/25/2016_
 
 #### By _**Luca Quatela**_
 
 ## Description
 
-_This page was developed as a solo project at Epicodus "Intro to programming" class. According to the selected preferences, the page will suggest you a place to visit_
+_This page was developed as a solo project at Epicodus "Intro to programming" class.
 _GitHub Pages link:_
 http://lucaita.github.io/Vacation-Suggester-solo-project-/
 
@@ -22,7 +22,7 @@ _No known bugs_
 
 ## Support and contact details
 
-_Contact me at XXX@gmail.com if you need support_
+_Contact me at lucaqq@gmail.com if you need support_
 
 ## Technologies Used
 
