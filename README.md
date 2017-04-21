@@ -28,7 +28,7 @@ _Contact me at lucaqq@gmail.com if you need support_
 
 ## Technologies Used
 
-_jQuey, JavaScript, Bootstrap, HTML, CSS_
+_jQuery, JavaScript, Bootstrap, HTML, CSS_
 
 ### License
 
