@@ -10,11 +10,11 @@ _The user is given a series of questions to answer, based on that the site sugge
 _This page was developed as a solo project at Epicodus "Intro to programming" class.
 
 _GitHub Pages link:_
-http://lucaita.github.io/Vacation-Suggester-solo-project-/
+http://lucaita.github.io/Vacation-Suggester/
 
 ## Setup/Installation Requirements
 
-* _Clone the repository from https://github.com/LucaIta/Vacation-Suggester-solo-project-.git_
+* _Clone the repository from https://github.com/LucaIta/Vacation-Suggester.git_
 * _Open INDEX.html with your browser_
 * _Select your preferences and hit submit_
 
